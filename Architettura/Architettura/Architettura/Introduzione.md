@@ -49,7 +49,8 @@ Il calcolatore è composto da **layer** fino a quando non raggiunge un livello c
 
 # La Cipolla
 
-Si crea uno schema a cipolla con una gerarchia di linguaggi astratti e macchine virtuali corrispondenti ogni programma del livello n deve essere tradotto per il livello n-1 ![](https://likingaxis.github.io/UNI/UNI/UTILITY/Pasted-image-20240305121402.png)
+Si crea uno schema a cipolla con una gerarchia di linguaggi astratti e macchine virtuali corrispondenti ogni programma del livello n deve essere tradotto per il livello n-1 
+![](https://likingaxis.github.io/UNI/UNI/UTILITY/Pasted-image-20240305121402.png)
 
 ## Architettura multilivello attuale
 
