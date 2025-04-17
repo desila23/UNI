@@ -1,0 +1,146 @@
+tipi di dato:
+dizionario: voglio mantenere un insieme S di coppie dove ogi elemento ha una chiave e le oprazioni che vogli fare sono
+cercare gli elementi per chiave(il costo di una qualsiasi operazione dipende da come viene implementato un dizionario), inserimento e
+cancellazione(di solito la cancellazione la faccio per chiave)
+pila: essa mantiene una sequenza S di elementi ordinati e su questa sequenza posso capire se la pila è vuota,
+posso mettere elementi (push metto gli elementi in testa), pop tolgo l'elemento in cima alla pila, top mi dice solo chi c'è in cima alla pila.
+coda:mantiene una sequenza di elementi che ha una disposizione simili alla pila però è orizzontale, le operazioni sono identiche al precedente tipo di dato
+tranne che per deque che toglie il primo elemento della coda, first mi dice chi è il primo elemento ma non lo toglie.
+-------------------------------------------------------
+"come li implemento?"
+esistono due tipi di implementazioni:
+-rappresentazioni indicizzate 
+esse utilizzano come mattoncini di base array e matrici 
+-rappresentazioni collegate 
+usano come mattoncini record e puntatori
+-tra esse ci sono vantaggi e svantaggi:
+con le indicizzate se ho un array pieno in memoria e voglio aggiungere un elemento e spostare tutti nella successiva cella ciò non può essere fatto in tempo costante;
+inoltre se voglio aggiungere un elemento con l'array pieno devo creare un array nuovo più grande copiare tutti gli elementi + quello nuovo e cancellare il precedente array(realloc)
+nelle collegate la loro base sono i puntatori(record) essi sono ordinati secondo il loro indirizzo di memoria, ogni record ha dei campi che sono puntati dai puntatori.
+struttura record--->campo informativo e puntatore all'elemento successivo(lista semplice)
+in questi record per accedere alla struttura parto dal primo record e da li mi sposto con i puntatori.
+se la lista è doppiamente linkata ho puntatore anche all'elemento precedente.
+i vantaggi sono che se vogli mettere un nuovo elemente in mezzo alla lista mi basta creare un nuovo mattoncino e cambiare i collegamenti con i puntatori tempo costante,
+però fare la ricerca binaria sarebbe impossibile a differenza dell'array.
+------------------------------------------------
+implentare un dizionario con array e liste:
+-con array:
+in ogni cella metto gli elemti del dizionario(solo chiavi senza info satellite) in modo non ordinato, mi mantengo anche una cella che mi dice anche quanti 
+sono gli elementi del dizionario.
+adesso voglio fare un inserimento e lo farò mettendo l'elemento in testa all'array costo O(1).
+cancellazione: per cancellare so che c'è un puntatore sull'elemento che vogli cancellare e in più so dove si trova l'ultimo elemento quindi 
+tolgo l'elemento e lo sostituisco con l'ultimo costo O(1) però decremento la lunghezza di 1
+per cercare invece il costo è O(n)(nel caso in cui l'array non è ordinato) perchè devo comunque scorrere.
+se fosse ordinato la ricerca costa log(n) con binsearch, però le restanti operazioni costano O(n) poichè sei obligato a shiftare l'array per mantenere l'ordinamento.
+con liste mi attacco comunque al cazzo.
+--------------------------------------------------
+pile e code posso essere implementate in modo efficente con liste e array (esercizio per casa)
+--------------------------------------------------
+usare record e puntatori per tenere alberi in memoria:
+grado di un nodo:numero dei suoi figli
+antenato: dati due nodi u si dice antenato di v se riesco a raggiungerlo reisalendo di padre in padre 
+discendente: concetto contrario di antenato
+vabbe come lo mantengo un albero in memoria con una struttura dati?
+mantenere un albero con i vettori sarebbe bello abbiamo più modi:
+1)nelle celle metto le informazioni di un nodo, creo il cossidetto vettore dei padri.
+in ogni cella metto 'informazioni del singolo noto + l'indice di dove sta il padre [(l,3),(c,3),(A,null)...]
+caratteristiche:
+questo tipo di rappresentazione mi permette di rappresentare nodi di qualsiasi grado, inoltre se ho un riferminto a un nodo trovare il padre lo faccio in tempo costante
+però per capire tutti i miei figli devo scorrere tutto l'array e trovare tutti gli elmenti aventi il giusto secondo campo quindi costo O(n).
+2) rappresentazione con vettore posizionale, essa è molto veloce ma si può usare solo con alberi biari che sono completi o quasi.
+l'idea è che i nodi sono in ordine di livello, è comodo perchè praticamnte mi muovo usando le regole dell'heap.
+trovare padri e figli lo faccio in tempo costante, la mia limitazione sta nel modo in cui deve essere fatto.
+3) con i record e puntatori rappresento l'albero, i nodi li metto nel record e ogni record avrà due campi ovvero due puntatori,
+un puntatore punta al figlio destro e uno al sinistro però dovrò mantenere un puntatore alla radice.
+una foglia la individuo se i puntatori sono a null.
+la seguente rappresentazione è per alberi biari.
+un altra rapprsentazione è avere ogni nodo con solo un puntatore che punta a una lista di puntatori che puntano ai figli.
+l'ultima tipologia che possiamo avere è che ogni nodo ha un puntatore al primo figlio e ogni figlio ha un puntatore al fratello successivo. 
+attenzione perchè in pgni rappresentazione non c'è un puntatore a padre ma volendo posso mettere un campo in più e li implemento.
+-------------------------------------------------------------
+algoritmi di visita degli alberi:
+accedere in modo sistematico ai nodi e archi di un albero, sistematico significa che io a un determinato nodo ci voglio accedere solo una volta
+algoritmi di visita si distinguono in base all'ordine con cui accedono a tutti i nodi.
+due tipi di visite:
+- profondità: si parte dalla radice vado su un figlio poi se esso ha un figlio vado su esso e così via fino a che non posso più scendere,
+da qui rinizio a risalire utilizando i figli non visitati in precedenza.(guarda immagine sulle slide è più chiara).
+per implementazione sappiamo di avere un albero binario fatto con record--->
+algoritmo iterativo:
+usiamo una pila come struttura dati, mettiamo nella pila la radice e usiamo un ciclo while(s.pop estrae il nodo, s.push mettono nella pila i puntatori dei figli).(anche qui guarda immagine)
+il costo è O(n) percè ogni nodo viene inserito e tirato fuori una sola volta mentre per individuare un nodo lo faccio in tenpo costante.
+però perchè usiamo le visite su un albero?
+di base le usiamo per il calcolo di informazioni.
+-visita in profondità in modo ricorsivo:
+parto dalla radice, se il nodo è diverso da null visito ricorsivamente il sottoalbero destro e il sinistro, 
+fino ad ora abbiamo usato una visita in preordine.
+volendo c'è la visita simmetrica e postordine.(guarda esempi perchè jacopo ha tiltato e non si è capito un cazzo)
+-----------------------------------------------------------
+visita in ampiezza:
+vuoldire visitare i nodi per livelli quindi in ordine di distanza dalla radice.
+qui a livello di algoritmo non usiamo la pila ma usiamo la coda.
+la complessità è O(n).
+----------------------------------------------------------
+uso della visita per calcolare informazioni implicite
+tipo altezza dell'albero 
+1 +{maxhs, max,hd} quel + 1 è il passaggi dalla radice ai figli, c'è un algoritmo sulle slide ricorsivo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
