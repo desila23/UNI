@@ -1,0 +1,36 @@
+- [ ] Silksong (PEFFORZA!!!!!!!!!!!!!!!!!!!!)
+- [ ] Crowsworn (PEFFORZA!!!!!!)
+- [ ] Ori and the will of the wisps (PEFFORZA)
+- [ ] Neva (PEFFORZA!!!!!!!!!!!)
+- [ ] no rest for the wicked (PEFFORZA)
+- [ ] Hyper Light Breaker (PEFFORZA)
+- [ ] Blazblue (PEFFROZA!!!!!!!!)
+- [x] Katana Zero (PEFFORZA!!!!!)
+- [ ] Clair Obscur: Expedition 33
+- [ ] Eden's guardian
+- [ ] Savior
+- [ ] the spirit of the samurai
+- [ ] Morkull 
+- [ ] Mouse: pi for me
+- [ ] Drop duchy
+- [ ] Deer and the boy
+- [ ] Slay the spire II
+- [ ] Tenjutsu
+- [ ] The eternal life of goldman
+- [ ] Replaced
+- [ ] Possessor(s)
+- [ ] Croak
+- [ ] Eternal strands
+- [ ] Aestik
+- [ ] Crypt custodian
+- [ ] Marko: beyond brave
+- [ ] Fatal claw
+- [ ] Exil
+- [ ] Maui: the shapeshifter
+- [ ] Fallen Tear: the ascension
+- [ ] Altered Alma
+- [ ] Moon Samurai
+- [ ] Constance
+- [ ] Akatori
+- [ ] Lucid
+
