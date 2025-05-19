@@ -1,0 +1,15 @@
+# OPERAZIONI SUI FILE
+
+| **Operazione**    | **Descrizione**                                                                                                                                               |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Create**         | Creazione di un file senza dati. Principalmente per «annunciare» la presenza del file e impostare alcuni attributi. Non aggiunge dati ma lo registra nel file system (istanza vuota). |
+| **Delete**         | Eliminazione di un file per liberare spazio su disco. Dopo l'eliminazione, il file non è più accessibile.                                                    |
+| **Open**           | Apertura di un file per caricare in memoria gli attributi e gli indirizzi del disco. Facilita l'accesso rapido in seguito.                                   |
+| **Close**          | Chiusura del file per liberare spazio nelle tabelle interne del sistema operativo. Forza anche la scrittura dell'ultimo blocco.                              |
+| **Read**           | Lettura dei dati da un file, generalmente dalla posizione corrente. Richiede un buffer per memorizzare i dati letti in RAM per velocità.                    |
+| **Write**          | Scrittura di dati nel file, alla posizione corrente. Può ampliare il file o sovrascrivere i dati esistenti.                                                  |
+| **Append**         | Aggiunta di dati solo alla fine del file. Usata come forma limitata di scrittura in alcuni sistemi operativi.                                                |
+| **Seek**           | Riposizionamento del puntatore del file a una posizione specifica (per accesso casuale). Permette lettura o scrittura dalla posizione scelta.                |
+| **Get Attributes** | Lettura degli attributi di un file. Necessaria per processi come il comando `make` in UNIX per la gestione dei progetti software.                           |
+| **Set Attributes** | Modifica degli attributi di un file (es. modalità di protezione o flag), effettuata dopo la creazione del file.                                              |
+| **Rename**         | Rinominare un file. Utile come alternativa alla copia ed eliminazione, specialmente per file di grandi dimensioni.                                           |
