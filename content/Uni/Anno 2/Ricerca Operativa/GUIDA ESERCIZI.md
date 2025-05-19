@@ -1,9 +1,17 @@
 ## LISTA ESERCIZI
+<<<<<<< HEAD
 1. Un dato vettore può essere una base ammissibile?
 2. Può esistere una soluzione di base ammissibile con $x_{2}$ e $x_{3}$ in base
 3. Può esistere un vertice della regione ammissibile del problema con $x_{1}$ e $x_{2}$ strettamente positivi?
 4. Può esistere una soluzione ottima con $x_{3}$ in base?
 5. Può esistere una soluzione ottima con $x_{1}$ e $x_{2}$ strettamente positivi?
+=======
+1. Un dato vettore può essere una base ammissibile?  PISELLO
+2. Può esistere una soluzione di base ammissibile con $x_{2}$ e $x_{3}$ in base
+3. Può esistere un vertice della regione ammissibile del problema con $x_{1}$ e $x_{2}$ strettamente positivi? 
+4. Può esistere una soluzione ottima con $x_{3}$ in base? 
+5. Può esistere una soluzione ottima con $x_{1}$ e $x_{2}$ strettamente positivi? 
+>>>>>>> origin/v4
 6. Simplesso
 7. Simplesso a 2 fasi
 8. simplesso primale-duale a partire da una soluzione duale y
@@ -68,8 +76,13 @@
 1) Faccio il duale della formula ORIGINALE
 2) Pongo i vincoli di $x_{1}$ e $x_{2}$ $> 0$, il resto $= 0$ (in pratica cancello tutti i vincoli tranne quelli di $x_{1}$ e $x_{2}$)
 3) Trovo i valori di delle varie y
+<<<<<<< HEAD
 	- rispettano i domini del duale -> Esiste soluzione ammissibile
 	- non rispettano i domini del duale -> Non esiste soluzione ammissibile
+=======
+	- rispettano i vincoli delle variabili -> Esiste soluzione ottima
+	- non rispettano i vincoli delle variabili -> Non esiste soluzione ottima
+>>>>>>> origin/v4
 
 
 ### 6. Simplesso
