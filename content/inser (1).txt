@@ -1,0 +1,7 @@
+|               | Find Min | Insert      | Delete      | DelMin      | Incr. Key   | Decr. Key   | Merge       |
+|---------------|----------|-------------|-------------|-------------|-------------|-------------|-------------|
+| **Array non ord.** | Θ(n)    | O(1)        | O(1)        | Θ(n)        | O(1)        | O(1)        | O(n)        |
+| **Array ordinato** | O(1)    | O(n)        | O(n)        | O(1)        | O(n)        | O(n)        | O(n)        |
+| **Lista non ordinata** | Θ(n)    | O(1)        | O(1)        | Θ(n)        | O(1)        | O(1)        | O(1)        |
+| **Lista ordinata** | O(1)    | O(n)        | O(1)        | O(1)        | O(n)        | O(n)        | O(n)        |
+| **d-Heap**        | O(1)    | O(log_d(n)) | O(d log_d(n)) | O(d log_d(n)) | O(d log_d(n)) | O(log_d(n)) | O(n)        |
