@@ -1,5 +1,5 @@
 ## LISTA ESERCIZI
-1. Un dato vettore può essere una base ammissibile?  PISELLO
+1. Un dato vettore può essere una base ammissibile? 
 2. Può esistere una soluzione di base ammissibile con $x_{2}$ e $x_{3}$ in base
 3. Può esistere un vertice della regione ammissibile del problema con $x_{1}$ e $x_{2}$ strettamente positivi? 
 4. Può esistere una soluzione ottima con $x_{3}$ in base? 
