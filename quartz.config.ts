@@ -92,6 +92,9 @@ const config: QuartzConfig = {
       Plugin.CustomOgImages(),
     ],
   },
-}
+  cliOptions: {
+    enablePull: false,
+  },
+} as any
 
 export default config
