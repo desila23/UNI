@@ -1,9 +1,9 @@
 ## LISTA ESERCIZI
-1. Un dato vettore può essere una base ammissibile? ❌
+1. Un dato vettore può essere una base ammissibile? 
 2. Può esistere una soluzione di base ammissibile con $x_{2}$ e $x_{3}$ in base
-3. Può esistere un vertice della regione ammissibile del problema con $x_{1}$ e $x_{2}$ strettamente positivi? ❌
-4. Può esistere una soluzione ottima con $x_{3}$ in base? ❌
-5. Può esistere una soluzione ottima con $x_{1}$ e $x_{2}$ strettamente positivi? ❌
+3. Può esistere un vertice della regione ammissibile del problema con $x_{1}$ e $x_{2}$ strettamente positivi? 
+4. Può esistere una soluzione ottima con $x_{3}$ in base? 
+5. Può esistere una soluzione ottima con $x_{1}$ e $x_{2}$ strettamente positivi? 
 6. Simplesso
 7. Simplesso a 2 fasi
 8. simplesso primale-duale a partire da una soluzione duale y
