@@ -21,7 +21,7 @@
 
 ---
 ### 1. Un dato vettore può essere una base ammissibile?
-![[Pasted image 20250518151400.png]]
+![[content/Zphoto/Pasted image 20250518151400.png]]
 1) Prendo i ***vincoli ORIGINALI*** e sostituisco il ***vettore*** 
 	- se i vincoli sono corretti -> proseguo oltre
 	- se i vincoli NON sono corretti -> non può essere SBA -> fine
@@ -37,7 +37,7 @@
 
 
 ### 2. Può esistere una soluzione di base ammissibile con $x_{2}$ e $x_{3}$ in base
-![[Pasted image 20250518172033.png]]
+![[content/Zphoto/Pasted image 20250518172033.png]]
 1) Faccio forma standard
 2) Metto $x_{2}$ e $x_{3}$ in base
 	- ossia, pongo TUTTO tranne, $x_{2}$ e $x_{3}$, uguale a $0$ (e quindi cancello le variabili che non sono $x_{2}$ e $x_{3}$ dai vincoli)
@@ -48,7 +48,7 @@
 
 
 ### 3. Può esistere un vertice della regione ammissibile del problema con $x_{1}$ e $x_{2}$ strettamente positivi?
-![[Pasted image 20250518151410.png]]
+![[content/Zphoto/Pasted image 20250518151410.png]]
 1) Parto dalla ***forma standard*** (=)
 2) Pongo <u>TUTTE</u> le variabili diverse da $x_{1}$ e $x_{2}$ UGUALI A 0
 3) Risolvo il sistema ottenuto e trovo $x_{1}$ e $x_{2}$
@@ -58,8 +58,8 @@
 
 
 ### 4. Può esistere una soluzione ottima con $x_{3}$ in base
-![[Pasted image 20250518151416.png]]
-1) Faccio il duale DIRETTAMENTE DAI VINCOLI ORIGINALI ![[Pasted image 20250517190624.png]]
+![[content/Zphoto/Pasted image 20250518151416.png]]
+1) Faccio il duale DIRETTAMENTE DAI VINCOLI ORIGINALI ![[content/Zphoto/Pasted image 20250517190624.png]]
 2) Seleziono la riga che nel duale corrisponde a $x_{3}$ (quindi la terza riga)
 3) vedo quanto vale $u_{i}$ (che io chiamerò $y_{i}$)
 	- rispetta il dominio? (quello cerchiato in rosso)
@@ -72,7 +72,7 @@
  
 
 ### 5. Può esistere una soluzione ottima con $x_{1}$ e $x_{2}$ strettamente positivi?
-![[Pasted image 20250518151431.png]]
+![[content/Zphoto/Pasted image 20250518151431.png]]
 1) Faccio il duale della formula ORIGINALE
 2) Pongo i vincoli di $x_{1}$ e $x_{2}$ $> 0$, il resto $= 0$ (in pratica cancello tutti i vincoli tranne quelli di $x_{1}$ e $x_{2}$)
 3) Trovo i valori di delle varie y
@@ -88,15 +88,15 @@
 ### 6. Simplesso
 1) Forma standard
 2) Metto tutto nel tableaux
-	![[Pasted image 20250518154959.png|center|450]]
+	![[content/Zphoto/Pasted image 20250518154959.png|center|450]]
 	- prendo il $\gamma_{i}$ di z più piccolo tra quelli $< 0$
 	- Trovo il pivot (come nel tableaux del primale-duale)
 	- Divido tutta la riga scelta per il pivot
-		![[Pasted image 20250518155521.png]]
+		![[content/Zphoto/Pasted image 20250518155521.png]]
 	- Cancello tutte le righe tranne
 		- quella scelta
 		- le righe che hanno nella colonna del pivot valore $=0$
-		![[Pasted image 20250518155612.png]]
+		![[content/Zphoto/Pasted image 20250518155612.png]]
 	- Per riscrivere le righe cancellate
 		- parto dalla riga che voglio riscrivere
 		- se voglio scrivere la `b` allora
@@ -104,7 +104,7 @@
 			- la moltiplico per il valore (cambiato di segno) che si trova nella colonna verde e nella riga che voglio scrivere NEL TABLEAUX PRECEDENTE(es. riga `z`, prendo il suo valore originale di $x_{3}$ ($-(-5)$)) 
 			- sommo questo valore con la casella del vecchio tableaux 
 			- sostituisco questo valore nella corrispettiva casella nel tableaux nuovo
-			![[Pasted image 20250518160057.png]]
+			![[content/Zphoto/Pasted image 20250518160057.png]]
 3) Finito il tableaux controllo se TUTTI i $\gamma_{i}$ di `z` sono $\ge 0$
 	- si -> fine simplesso e scrivo $B_{ot}$
 	- no -> rifaccio di nuovo il tableaux PARTENDO DALL'ULTIMO TABLEAUX OTTENUTO

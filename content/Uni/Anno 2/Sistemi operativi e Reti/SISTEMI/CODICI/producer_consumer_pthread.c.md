@@ -130,7 +130,7 @@ Queste sono funzioni più specifiche che servono per inizializzare sia il `mutex
 Il secondo parametro `const pthread_mutexattr_t *attr` sono i classici attributi ma a noi non servono e mettiamo `NULL`
 
 >[!tip] DIFFERENZE CON ALTRE INIZIALIZZAZIONI
->In [[producer_consumer_semaphore.c]] e in [[reader_writer_semaphore.c]]si utilizzavano queste funzioni
+>In [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/CODICI/producer_consumer_semaphore.c]] e in [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/CODICI/reader_writer_semaphore.c]]si utilizzavano queste funzioni
 >```c
 >sem_init(&mutex, 0, 1);
 >sem_init(&empty, 0, N);

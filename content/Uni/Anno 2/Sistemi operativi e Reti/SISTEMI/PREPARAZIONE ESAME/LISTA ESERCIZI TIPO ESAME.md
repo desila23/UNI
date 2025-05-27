@@ -10,7 +10,7 @@ Creare un programma che legge un file e conta le occorrenze di una parola nel se
 - Il secondo processo legge dalla metà fino alla fine e conta le occorrenze della parola.
 - Inviano poi il numero di occorrenze al processo padre, il quale le somma e le stampa a video.
 
->[!success]  [[1. Conta_occorrenze_da_file|PROCESSI CHE LEGGONO OCCORRENZE FILE]]
+>[!success]  [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/1. Conta_occorrenze_da_file|PROCESSI CHE LEGGONO OCCORRENZE FILE]]
 
 
 ---
@@ -21,7 +21,7 @@ Generare due processi figli che comunicano con il padre:
 - L’altro processo genera numeri casuali `[0-100]` ed invia al padre solo i numeri dispari.
 - Il padre fa la loro somma e quando la somma > 190, termina l’esecuzione dei figli.
 
->[!success] [[2. Figli-PariDispari + Padre = 190|NUMERI GENERATI DA P1 E P2]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/2. Figli-PariDispari + Padre = 190|NUMERI GENERATI DA P1 E P2]]
 
 ---
 
@@ -31,7 +31,7 @@ Un processo padre genera due processi figli:
 - Il padre legge questo numero, lo moltiplica per un `k` casuale e lo manda al secondo figlio.
 - Il secondo figlio legge il numero inviato dal padre e lo stampa a video.
 
->[!success] [[3. Figlio1_estrae_Padre_moltiplica_Figlio2_stampa|NUMERO GENERATO DA P1, MOLTIPLICATO DAL PADRE, STAMPATO DA P2]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/3. Figlio1_estrae_Padre_moltiplica_Figlio2_stampa|NUMERO GENERATO DA P1, MOLTIPLICATO DAL PADRE, STAMPATO DA P2]]
 
 ---
 
@@ -53,7 +53,7 @@ Scrivere un programma che esegue la moltiplicazione tra matrici 3x3 usando la pr
 - Il secondo processo figlio computa la seconda colonna.
 - Il processo padre computa la terza colonna, riceve dai figli i due vettori colonna computati, compone la matrice finale e la stampa.
 
->[!success] [[5. Moltiplicazione tra matrici|MOLTIPLICAZIONE TRA MATRICI]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/5. Moltiplicazione tra matrici|MOLTIPLICAZIONE TRA MATRICI]]
 
 ---
 
@@ -63,7 +63,7 @@ Generare due processi figli che comunicano con il padre:
 - L’altro processo genera numeri casuali `[51-100]` ed invia al padre solo i numeri multipli di `2`.
 - Il padre stampa i numeri ricevuti ed esegue la loro somma quando la somma > `130`.
 
->[!success] [[6. Somma_maggiore_130|SOMMA MAGGIORE 130]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/6. Somma_maggiore_130|SOMMA MAGGIORE 130]]
 
 ---
 
@@ -73,7 +73,7 @@ Scrivere un programma C che crea un processo figlio:
 - Il figlio fa il quadrato del numero e lo invia nuovamente al padre solo se il quadrato è pari, attraverso la pipe.
 - Il padre legge il numero e lo stampa.
 
->[!success] [[7. Quadrato_pari|QUADRATO PARI]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/7. Quadrato_pari|QUADRATO PARI]]
 
 ---
 
@@ -84,7 +84,7 @@ Scrivere un programma C che svolge le seguenti richieste:
 - Il padre riceve questi numeri e li scrive in un array di `N` interi, mettendo in posizioni pari i numeri ricevuti dal primo figlio, e in posizioni dispari i numeri ricevuti dal secondo figlio.
 - Il padre stampa l’array e calcola il max e il min.
 
->[!success] [[8. Array posizioni|POSIZIONI IN UN ARRAY]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/8. Array posizioni|POSIZIONI IN UN ARRAY]]
 
 ---
 
@@ -95,7 +95,7 @@ Implementare un programma che utilizzi `fork` e pipe per la comunicazione tra pr
 - L’altro processo figlio scrive una sequenza di numeri interi dispari nello stesso file.
 - Il processo padre legge i dati dal file e li stampa a video.
 
->[!success] [[9. Numeri in un file|NUMERI PASSATI AD UN FILE]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/PROCESSI/9. Numeri in un file|NUMERI PASSATI AD UN FILE]]
 
 ---
 
@@ -114,7 +114,7 @@ Scrivere un programma C che segue le seguenti specifiche:
     - Il terzo thread controlla se tutte le celle del buffer sono state inizializzate. In caso positivo, determina se il numero di celle contenenti `+1` è maggiore di quelle con `-1` e termina tutti i thread.
     - Mentre un thread accede al buffer, nessun altro deve accedervi. Ogni thread attende un tempo random tra `0` e `3` secondi. 
 
->[!success] [[1. Array con +1 e -1|ARRAY CON +1 E -1]]
+>[!success] [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/PREPARAZIONE ESAME/MUTEX/1. Array con +1 e -1|ARRAY CON +1 E -1]]
 
 ---
 

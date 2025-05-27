@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
 
 
 ### Funzionamento
-Identico a [[my_signal_1.c]]
+Identico a [[content/Uni/Anno 2/Sistemi operativi e Reti/SISTEMI/CODICI/my_signal_1.c]]
 
 ```c
 alarm(1);
